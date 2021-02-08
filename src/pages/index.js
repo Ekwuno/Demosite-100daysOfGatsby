@@ -1,9 +1,7 @@
 import React from 'react'
-import {graphql} from 'gatsby'
-import {Box,Text,Link} from "@chakra-ui/react"
+import {Link,graphql} from 'gatsby'
 
 import Layout from '../componets/layout'
-import { Headphone } from '../componets/headphones'
 
 export const query = graphql`
 query MyQuery {
@@ -30,28 +28,21 @@ export default function IndexPage ({data}){
       <h1> 
         Hi I am a POC 
       </h1>
-
-      <Box  as = "button" borderRadius="md" bg="tomato" color="white" px={4} h={10}>
-        <Text frontSize="xl"> Hello I am from Chakra</Text>
-      </Box>
-     
-
-     <Headphone/>
       <ul>
         {
           data.allContentfulCity.edges.map(({node:city})=> (
             <li
             key = {city.name}
             >
-              {city.description} - {city.map.lat} - {city.map.lon}
-                <Text>
-                  <Link color="teal.500" href = {city.gatsbyPath}>{city.name}</Link>
-                </Text>
+              {city.description} - {city.map.lat}- {city.map.lon}
+                <h2>
+                  <Link to = {city.gatsbyPath}>{city.name}</Link>
+                </h2>
             </li>
           ))
         }
       </ul>
-      <Link href= "/about"> To about page </Link>
+      <Link to= "/about"> To about page </Link>
     </ Layout>
   )
 }
