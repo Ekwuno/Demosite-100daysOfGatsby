@@ -31,7 +31,7 @@ export default function IndexPage ({data}){
         Hi I am a POC 
       </h1>
 
-      <Box  as = "button" borderRadius="md" bg="black" color="white" px={4} h={10}>
+      <Box  as = "button" borderRadius="md" bg="tomato" color="white" px={4} h={10}>
         <Text frontSize="xl"> Hello I am from Chakra</Text>
       </Box>
      
@@ -45,7 +45,7 @@ export default function IndexPage ({data}){
             >
               {city.description} - {city.map.lat} - {city.map.lon}
                 <Text>
-                  <Link color="black.500" href = {city.gatsbyPath}>{city.name}</Link>
+                  <Link color="teal.500" href = {city.gatsbyPath}>{city.name}</Link>
                 </Text>
             </li>
           ))

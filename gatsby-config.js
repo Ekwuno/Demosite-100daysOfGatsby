@@ -16,7 +16,7 @@ module.exports = {
     plugins: [
       `gatsby-plugin-image`,
       `gatsby-plugin-sharp`,
-      `gatsby-plugin-react-helmet`,
+      // `gatsby-source-filesystem`,
       `gatsby-transformer-sharp`,
       {
         resolve: `gatsby-source-filesystem`,
@@ -40,7 +40,7 @@ module.exports = {
                * @property {boolean} [isResettingCSS=true]
                * if `false`, this plugin will not use `<CSSReset />
                */
-              isResettingCSS: true,
+              isResettingCSS: false,
               /**
                * @property {boolean} [isUsingColorMode=true]
                * if `false`, this plugin will not use <ColorModeProvider />
