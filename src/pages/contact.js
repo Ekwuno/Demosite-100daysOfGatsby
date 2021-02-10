@@ -8,8 +8,7 @@ import { Heading , Stack, Input, TextArea as ChackraTextArea,
     FormErrorMessage,
     FormHelperText,
     Button, 
-    layout} from "@chakra-ui/react"
-    import { Radio, RadioGroup } from "@chakra-ui/react"
+  } from "@chakra-ui/react"
 import Layout from '../componets/layout';
 
 
