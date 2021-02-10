@@ -15,7 +15,7 @@ export default function Layout({children}){
         <div>
             <Header>
                      <Link to="/" >
-                     <h3>MySweetSite</h3>
+                     <h3>MySweetSite </h3>
                     </Link>
            
 
